@@ -1,6 +1,6 @@
 
 from django.conf.urls import patterns, include, url
-from .views import ExperienceListAPIView, BioListAPIView, ExperienceRetrieveUpdateDestroyAPIView, BioUpdateAPIView
+from .views import ExperienceListAPIView, BioListAPIView, ExperienceRetrieveUpdateDestroyAPIView, BioUpdateAPIView, ExperienceAPIView
 from django.contrib import admin
 from django.conf.urls import include
 
@@ -8,7 +8,7 @@ from django.conf.urls import include
 
 urlpatterns = patterns('',
 
-
+    url(r'^exp/$', ExperienceAPIView.as_view()),
     url(r'^experience/$', ExperienceListAPIView.as_view()),
     url(r'^experience/change/(?P<experience_id>\d+)/$', ExperienceRetrieveUpdateDestroyAPIView.as_view(), name='delete_patch_experience'),
 
