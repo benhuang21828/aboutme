@@ -78,7 +78,7 @@ ROOT_URLCONF = 'aboutme.urls'
 WSGI_APPLICATION = 'aboutme.wsgi.application'
 
 REST_FRAMEWORK = {
-    # 'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser','rest_framework.permissions.AllowAny',),
     'PAGINATE_BY': 10
 }
 # Database
