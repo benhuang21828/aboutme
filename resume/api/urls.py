@@ -8,8 +8,8 @@ from django.conf.urls import include
 
 urlpatterns = patterns('',
 
-    url(r'^exp/$', ExperienceAPIView.as_view()),
-    url(r'^experience/$', ExperienceListAPIView.as_view()),
+    url(r'^experience/$', ExperienceAPIView.as_view()),
+    url(r'^experience/add/$', ExperienceListAPIView.as_view()),
     url(r'^experience/change/(?P<experience_id>\d+)/$', ExperienceRetrieveUpdateDestroyAPIView.as_view(), name='delete_patch_experience'),
 
 
