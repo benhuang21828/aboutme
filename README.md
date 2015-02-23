@@ -2,6 +2,8 @@
 
 This is a Django REST project to create a JSON end point with my experiences and bio, so I can play around with multiple templates without retyping the same information. 
 
+project ==> aboutme/resume/api/
+
 Functionalities:
   - GET
   - POST
